@@ -1,0 +1,10 @@
+# 不上传本地凭据文件
+*.json
+!package.json
+
+# macOS
+.DS_Store
+
+# 测试生成的HTML文件
+*_教学工具.html
+*_数据大屏.html
