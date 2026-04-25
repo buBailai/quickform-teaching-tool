@@ -2,7 +2,7 @@
 
 > 一句话，从零生成完整的课堂交互教学工具 + 数据可视化大屏。
 
-**English Summary:** A Claude Code skill that helps teachers create interactive HTML teaching tools with QuickForm data collection, automated test data submission, and real-time data visualization dashboards — all in one conversation.
+**English Summary:** An AI skill that helps teachers create interactive HTML teaching tools with QuickForm data collection, automated test data submission, and real-time data visualization dashboards — all in one conversation. Compatible with Claude Code, Codex, Trae, Cursor, Cherry Studio, and any AI tool that supports the Skills standard.
 
 ---
 
@@ -26,9 +26,9 @@
 
 ## 简介
 
-这是一个运行在 **Claude Code** 中的 Skill（技能插件），专为中小学教师设计。
+这是一个支持主流 AI 编程工具的 Skill（技能插件），专为中小学教师设计。
 
-只需通过自然语言对话描述你的需求，Skill 会自动完成以下全部工作：
+兼容 **Claude Code、Codex、Trae、Cursor、Cherry Studio** 等支持 Skills 标准的 AI 工具，只需通过自然语言对话描述需求，Skill 会自动完成以下全部工作：
 
 1. **创建 QuickForm 数据采集任务**（官网版或本地部署版）
 2. **生成交互式 HTML 教学工具页面**（闯关、测验、投票、问卷等多种形式）
@@ -67,7 +67,12 @@
 ## 前提条件
 
 ### 必须有
-- **[Claude Code](https://claude.ai/code)**（官方 CLI 工具）已安装并登录
+- 以下任意一款支持 Skills 的 AI 工具：
+  - **[Claude Code](https://claude.ai/code)**（Anthropic 官方 CLI）
+  - **[Codex](https://openai.com/codex)**（OpenAI）
+  - **[Trae](https://www.trae.ai)**
+  - **[Cursor](https://www.cursor.com)**
+  - **[Cherry Studio](https://cherry-ai.com)** 或其他支持 Skills 标准的工具
 - **[QuickForm](https://quickform.cn) 账号**（官网免费注册），或本地部署的 QuickForm 服务
 
 ### 可选
@@ -77,40 +82,48 @@
 
 ## 安装方法
 
-### 方法一：直接克隆（推荐）
+### 方法一：智能安装（最简单）✨
+
+把下面这段话直接发给你正在使用的 AI 工具（Claude Code、Codex、Trae、Cursor、Cherry Studio 等），让它帮你自动完成安装：
+
+> 请帮我安装一个 Skill：将 GitHub 仓库 `https://github.com/buBailai/quickform-teaching-tool` 克隆到本机的 Skills 目录（macOS/Linux 为 `~/.claude/skills/`，Windows 为 `C:\Users\<用户名>\.claude\skills\`），克隆完成后告诉我安装成功，并说明如何触发这个 Skill。
+
+AI 会自动识别你的系统环境、找到正确的目录并完成克隆，全程无需手动操作。
+
+---
+
+### 方法二：命令行克隆
 
 ```bash
-# 1. 进入 Claude Code skills 目录
+# macOS / Linux
 cd ~/.claude/skills
+git clone https://github.com/buBailai/quickform-teaching-tool.git
 
-# 2. 克隆本仓库
-git clone https://github.com/your-username/quickform-teaching-tool.git
-
-# 3. 完成！重新启动 Claude Code 即可生效
+# 重新启动你的 AI 工具即可生效
 ```
 
-### 方法二：手动下载
+### 方法三：手动下载
 
-1. 下载本仓库的 ZIP 文件并解压
-2. 将 `quickform-teaching-tool` 文件夹整体复制到 `~/.claude/skills/` 目录下
-3. 重新启动 Claude Code
+1. 点击 GitHub 页面右上角 **Code → Download ZIP**，解压
+2. 将 `quickform-teaching-tool` 文件夹复制到对应的 Skills 目录
+3. 重新启动你的 AI 工具
+
+### Skills 目录位置
+
+| 系统 | Skills 目录路径 |
+|------|------|
+| macOS / Linux | `~/.claude/skills/` |
+| Windows | `C:\Users\你的用户名\.claude\skills\` |
 
 ### 验证安装
 
-启动 Claude Code 后，输入：
+重启工具后，输入：
 
 ```
 帮我做一个教学工具
 ```
 
-如果 Claude 开始询问 QuickForm 版本，说明安装成功。
-
-### Skills 目录位置
-
-| 系统 | 路径 |
-|------|------|
-| macOS / Linux | `~/.claude/skills/` |
-| Windows | `C:\Users\你的用户名\.claude\skills\` |
+如果 AI 开始询问 QuickForm 版本，说明安装成功。
 
 ---
 
