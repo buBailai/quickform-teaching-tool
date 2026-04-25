@@ -396,4 +396,3 @@ MIT License
 
 ---
 
-*由厦门市演武小学信息中心与 Claude Code 共同构建*
