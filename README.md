@@ -1,5 +1,7 @@
 # QuickForm 交互式教学工具创建 Skill
 
+![版本](https://img.shields.io/badge/版本-v1.0.0-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+
 > 一句话，从零生成完整的课堂交互教学工具 + 数据可视化大屏。
 
 **English Summary:** An AI skill that helps teachers create interactive HTML teaching tools with QuickForm data collection, automated test data submission, and real-time data visualization dashboards — all in one conversation. Compatible with Claude Code, Codex, Trae, Cursor, Cherry Studio, and any AI tool that supports the Skills standard.
@@ -104,9 +106,11 @@ git clone https://github.com/buBailai/quickform-teaching-tool.git
 
 ### 方法三：手动下载
 
-1. 点击 GitHub 页面右上角 **Code → Download ZIP**，解压
-2. 将 `quickform-teaching-tool` 文件夹复制到对应的 Skills 目录
+1. 点击 GitHub 页面右上角 **Code → Download ZIP**，下载压缩包
+2. 将 `quickform-teaching-tool` 文件夹解压后复制到对应的 Skills 目录
 3. 重新启动你的 AI 工具
+
+> 💡 也可以把压缩包下载到桌面，然后直接告诉你的 AI 工具："帮我把桌面上的 quickform-teaching-tool.zip 解压并安装到 Skills 目录"，让它帮你完成后续步骤。
 
 ### Skills 目录位置
 
